@@ -44,31 +44,7 @@ class LoginController extends Controller
     {
       //  $this->middleware('guest:admin')->except('logout');
     }
-    // public function loging(Request $request)
-    // {
-    //     $token = null;
-    //     //$credentials = $request->only('email', 'password');
-    //     try {
-    //         if (!$token = JWTAuth::attempt( ['email'=>$request, 'password'=>$request])) {
-    //             return response()->json([
-    //                 'response' => 'error',
-    //                 'message' => 'Password or email is invalid',
-    //                 //'token'=>$token
-    //             ]);
-    //         }
-    //         return response()->json([
-    //                 'success' => true,
-    //                 'token' => $token,
-    //             ]);
-    //     } catch (JWTAuthException $e) {
-    //         return response()->json([
-    //             'response' => 'error',
-    //             'status'=>"failed",
-    //             'message' => 'Token creation failed',
-    //         ]);
-    //     }
-    //     return $token;
-    // }
+    
     public function loging(Request $request)
     {
    
@@ -87,30 +63,8 @@ class LoginController extends Controller
       }
 
       return $this->responseWithToken($token);
-    //   $data_all=([
-    //     "email"=>$request->email,
-    //      "password"=>$request->password
-
-    //   ]);
-    // }
-    //   $input =Auth::guard('admin')->validate( 
-    //     $request->only('email', 'password'));
-    //    $jwt_token = null;
-    //    if (!$jwt_token = JWTAuth::attempt($input)) {
-    //   {
-    //     return response()->json([
-         
-    //       'status'=> "failed",
-    //       'data'=>"Email or Password incorrect"]);
    
-    //   }
    
-    //     return response()->json([
-    //       'status'=>200,
-    //       'data'=>$jwt_token
-    //     ]);
-    
-    //    }
      }
      public function get_user(Request $request)
      {
