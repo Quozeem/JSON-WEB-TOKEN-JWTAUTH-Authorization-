@@ -31,12 +31,6 @@
   }</style>
 </head>
 <body>
-	<form method="post" action="{{route('texter')}}">
-@csrf
-<input type="text" name="email">
-<input type="text" name="password">
-<input type="submit" value="login">
-</form>
 	<form>
 @csrf	@if($services != null)
 	Available Services
