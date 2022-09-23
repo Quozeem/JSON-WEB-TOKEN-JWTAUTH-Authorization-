@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 /*
 |
-|  JWT JSON WEB TOKEN use for authorization users detail 
+|JWT JSON WEB TOKEN use for authorization users detail 
 |  installation
 |   composer require tymon/jwt-auth:dev-develop --prefer-source  or 
 |    "tymon/jwt-auth": "dev-develop", inside 
