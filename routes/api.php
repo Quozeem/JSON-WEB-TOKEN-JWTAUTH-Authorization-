@@ -36,7 +36,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['middleware' => 'api'], function($router) {
     Route::post('/all_categories',[App\Http\Controllers\VTUcontroller::class,'product_categories']);//->name("all_categories");
     Route::post('/secondToken',[App\Http\Controllers\Auth\LoginController::class,'secondToken']);
-Route::get('/profile',[App\Http\Controllers\Auth\LoginController::class,'get_user']);//->middleware('jwt-auth');
+Route::get('/profile',[App\Http\Controllers\Auth\LoginController::class,'get_user'])->middleware('jwt-auth');
 Route::post('/login',[App\Http\Controllers\Auth\LoginController::class,'authenticate']);
 Route::get('delete/{delete_id}',[App\Http\Controllers\TableController::class,'delete']);
 Route::post('insert',[App\Http\Controllers\TableController::class,'insert']);
