@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Auth;
 use JWTAuth;
 //use App\Models\User;
