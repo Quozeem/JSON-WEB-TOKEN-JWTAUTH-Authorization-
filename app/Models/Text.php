@@ -19,6 +19,7 @@ class Text extends Authenticatable
      * @var string[]
      */
 
+
     protected $guard = 'admin';
    
     /**
