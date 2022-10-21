@@ -32,6 +32,7 @@ class Login extends Authenticatable implements JWTSubject
     public function getJWTCustomClaims()
     {
         return [];
+
     }
     protected $table="users";
 //protected $guard="admin";
