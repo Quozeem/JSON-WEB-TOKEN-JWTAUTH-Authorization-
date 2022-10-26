@@ -11,7 +11,8 @@ use Illuminate\Support\Facades\Validator;
 
 class JWTController extends Controller
 {
-    public function register(Request $request)
+ 
+   public function register(Request $request)
     {
     	//Validate data
         $data = $request->only('name', 'email', 'password');
