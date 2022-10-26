@@ -21,6 +21,7 @@ class JWTController extends Controller
             'email' => 'required|email|unique:users',
             'password' => 'required|string|min:6|max:50'
         ]);
+
         //Send failed response if request is not valid
         if ($validator->fails()) {
             return response()->json(['error' => $validator->messages()], 200);
