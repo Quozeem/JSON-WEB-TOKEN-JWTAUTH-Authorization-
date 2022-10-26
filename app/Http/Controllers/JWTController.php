@@ -33,6 +33,7 @@ class JWTController extends Controller
         	'password' => bcrypt($request->password)
         ]);
 
+
         //User created, return success response
         return response()->json([
             'success' => true,
