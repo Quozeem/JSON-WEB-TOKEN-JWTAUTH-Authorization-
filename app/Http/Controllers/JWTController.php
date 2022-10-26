@@ -42,6 +42,7 @@ class JWTController extends Controller
         ], Response::HTTP_OK);
     }
  
+
     public function authenticate(Request $request)
     {
         $credentials = 
