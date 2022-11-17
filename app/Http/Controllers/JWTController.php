@@ -11,7 +11,23 @@ use Illuminate\Support\Facades\Validator;
 
 class JWTController extends Controller
 {
- 
+//   public function checkHeaders(Request $request)
+//     {
+//         if ($request->hasHeader('Authorization')) {
+//             $value = $request->header('Authorization');
+//         }
+
+//         //or use this
+//         $token = $request->bearerToken();
+
+//     }
+
+//     public function otherHeaders(Request $request)
+//     {
+//         $value = $request->header('X-Header-Name', 'default_header_value');
+//     }
+
+// }
    public function register(Request $request)
     {
     	//Validate data
