@@ -23,6 +23,7 @@ class JWTController extends Controller
 //     }
 
 
+
 //     public function otherHeaders(Request $request)
 //     {
 //         $value = $request->header('X-Header-Name', 'default_header_value');
