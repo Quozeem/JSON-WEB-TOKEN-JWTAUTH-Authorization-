@@ -17,7 +17,6 @@ class JWTController extends Controller
 //             $value = $request->header('Authorization');
 //         }
 
-
 //         //or use this
 //         $token = $request->bearerToken();
 
